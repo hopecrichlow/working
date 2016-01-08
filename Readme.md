@@ -1,6 +1,6 @@
 ## Welcome to My Project
 
-> I am your Readme.md file, you should probably update me.
+> My portfolio.
 
 
 ## Usage
@@ -38,9 +38,10 @@ At the top of your `main.scss` file, just import any of the following:
 
 ## NPM Tools Used
 
+- [Angular](https://angularjs.org/)
 - [Babel](https://babeljs.io/)
 - [Browserify](http://browserify.org/)
-- [JavaScript Code Style](http://jscs.info/)
-- [SASS](http://sass-lang.com/)
-- [Mocha](https://mochajs.org/)
 - [Chai](http://chaijs.com/)
+- [JavaScript Code Style](http://jscs.info/)
+- [Mocha](https://mochajs.org/)
+- [SASS](http://sass-lang.com)

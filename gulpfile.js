@@ -15,6 +15,7 @@ var stylish = require('jshint-stylish');
 var htmlhint = require('gulp-htmlhint');
 var jscs = require('gulp-jscs');
 var watch = require('gulp-watch'); // A Better File Watcher
+//var uibs = require('angular-ui-bootstrap');
 
 // Set up Foundation
 var path = require('path');
