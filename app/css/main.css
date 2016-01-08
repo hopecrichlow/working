@@ -5819,7 +5819,7 @@ button.close {
 
 body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 .text-muted {
   color: #777; }
@@ -6033,6 +6033,10 @@ section {
     font-weight: 400;
     margin-bottom: 75px; }
 
+.service-heading {
+  margin: 15px 0;
+  text-transform: none; }
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0; }
@@ -6080,6 +6084,9 @@ section {
       font-style: italic;
       font-size: 16px;
       margin: 0; }
+
+#portfolio * {
+  z-index: 2; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
@@ -6217,6 +6224,57 @@ section {
         margin-top: 40px; }
     .timeline li.timeline-inverted .timeline-panel {
       padding: 0 100px 20px 20px; } }
+
+aside.tech img {
+  margin: 50px auto; }
+
+section #contact {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color: #222;
+  background-image: url("../img/IMG_2876.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+  section #contact .section-heading {
+    color: white; }
+  section #contact .form-group {
+    margin-bottom: 25px; }
+    section #contact .form-group input,
+    section #contact .form-group textarea {
+      padding: 20px; }
+    section #contact .form-group input.form-control {
+      height: auto; }
+    section #contact .form-group textarea.form-control {
+      height: 236px; }
+  section #contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none; }
+  section #contact ::-webkit-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbbbbb; }
+  section #contact :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbbbbb; }
+  section #contact ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    ont-weight: 700;
+    color: #bbbbbb; }
+  section #contact :-ms-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbbbbb; }
+  section #contact .text-danger {
+    color: #e74c3c; }
 
 footer {
   padding: 25px 0;

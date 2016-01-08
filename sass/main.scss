@@ -86,7 +86,7 @@ $white: white;
 
 body {
   @include body-font;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .text-muted {
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: $gray-darkest;
 }
 
-//Restyled Primary Buttons
+// Restyled Primary Buttons /////////////////////////
 
 .btn-primary {
   @include button-variant($white, $brand-primary, $brand-primary);
@@ -158,6 +158,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   padding: 20px 40px;
 }
+
+/////////////////////////////////////////////////////////
 
 //////////////////// Custom Nav Bar /////////////////////////////////
 
@@ -323,15 +325,23 @@ section {
   }
 }
 
-// @media(min-width:768px) {
-//   section {
-//     padding: 150px 0;
-//   }
-// }
+@media(min-width:768px) {
+  // section {
+  //   padding: 150px 0;
+  // }
+}
 // End of Global Styles /////////////////////////////
 
-// Portfolio Section ///////////////////////////////
+// Skills Section /////////////////////////////////
 
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+// End of Skills Section ///////////////////////////
+
+// Portfolio Section ///////////////////////////////
 #portfolio {
   .portfolio-item {
     margin: 0 0 15px;
@@ -374,6 +384,7 @@ section {
         }                
       }            
     }
+
     .portfolio-caption {
       max-width: 400px;
       margin: 0 auto;
@@ -394,9 +405,9 @@ section {
     }
   }
 
-  // * {
-  //   z-index: 2;
-  // }
+  * {
+    z-index: 2;
+  }
 }
 
 @media(min-width:767px) {
@@ -409,7 +420,6 @@ section {
 // End of Portfolio Section /////////////////////////
 
 // Timeline ////////////////////////////////////////
-
 .timeline {
   list-style: none;
   padding: 0;
@@ -616,6 +626,79 @@ section {
 }
 // End of Timeline //////////////////////////////////
 
+
+// Tech Section ///////////////////////////////////////
+aside.tech {
+  img {
+    margin: 50px auto;
+  }
+}
+// End of Tech Section //////////////////////////////
+
+
+// Contact Section /////////////////////////////////
+section #contact {
+  @include background-cover;
+  background-color: $gray-darkest;
+  background-image: url('../img/IMG_2876.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  .section-heading {
+    color: $white;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+    input,
+    textarea {
+      padding: 20px;
+    }
+
+    input.form-control {
+      height: auto;
+    }
+
+    textarea.form-control {
+      height: 236px;
+    }
+  }
+
+  .form-control:focus {
+    border-color: $brand-primary;
+    box-shadow: none;
+  }
+
+  ::-webkit-input-placeholder {
+    @include heading-font;
+    font-weight: 700;
+    color: $placeholder-text;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    @include heading-font;
+    font-weight: 700;
+    color: $placeholder-text;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    @include heading-font;
+    ont-weight: 700;
+    color: $placeholder-text;
+  }
+
+  :-ms-input-placeholder {  
+    @include heading-font;
+    font-weight: 700;
+    color: $placeholder-text;
+  }
+
+  .text-danger {
+    color: $brand-danger;
+  }
+}
+
+// End of Contact Section /////////////////////////
+
 // Footer //////////////////////////////////////////
 footer {
   padding: 25px 0;
@@ -633,9 +716,7 @@ footer {
     text-transform: none;
   }
 }
-
-// Social Buttons
-
+// Social Buttons 
 ul.social-buttons {
   margin-bottom: 0;
   li {
@@ -667,9 +748,10 @@ ul.social-buttons {
 .btn:active:focus {
   outline: none;
 }
+
 // End of Footer //////////////////////////////////
 
-// Highlight Color Customization
+// Highlight Color Customization//////////////////////
 
 ::-moz-selection {
   text-shadow: none;

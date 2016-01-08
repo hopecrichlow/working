@@ -13,15 +13,8 @@ var config = function config($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/app-layout/layout.tpl.html'
   }).state('root.home', {
     url: '/',
-    // controller: 'HomeController as vm',
+    controller: 'HomeController',
     templateUrl: 'templates/app-layout/home.tpl.html'
-  }).state('root.about', {
-    url: '/about',
-    templateUrl: 'templates/app-layout/about.tpl.html'
-  }).state('root.portfolio', {
-    url: '/portfolio',
-    // controller: 'PortfolioController as vm',
-    templateUrl: 'templates/app-layout/portfolio.tpl.html'
   });
 };
 
