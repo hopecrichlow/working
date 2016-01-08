@@ -18,10 +18,10 @@ var config = function config($stateProvider, $urlRouterProvider) {
   }).state('root.about', {
     url: '/about',
     templateUrl: 'templates/app-layout/about.tpl.html'
-  }).state('root.projects', {
-    url: '/projects',
-    // controller: 'ProjectsController as vm',
-    templateUrl: 'templates/app-layout/projects.tpl.html'
+  }).state('root.portfolio', {
+    url: '/portfolio',
+    // controller: 'PortfolioController as vm',
+    templateUrl: 'templates/app-layout/portfolio.tpl.html'
   });
 };
 
