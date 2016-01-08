@@ -4,7 +4,9 @@ import angular from 'angular';
 // Make sure shim jQuery first
 import $ from 'jquery';
 import 'bootstrap-sass';
-// import 'angular-ui-bootstrap';
+
+// Import Sub Modules
+import './app-core/index';
 
 angular
   .module('app', ['app.core'])
